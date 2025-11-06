@@ -279,6 +279,8 @@ char main_menu()
 	printf("\n1. Sign up\n2. Login\n3. Exit\n");
 	printf("=============================\n");
 	printf("Enter choice: ");
+	
+	clear_input_buffer();
 	scanf(" %c",&choice);
 	return choice;
 }
@@ -290,6 +292,8 @@ char login_menu()
 	printf("\n1. Book a ticket\n2. Cancel a ticket\n3. Check bus status\n4. Logout\n");
 	printf("=============================\n");
 	printf("Enter choice: ");
+	
+	clear_input_buffer();
 	scanf(" %c",&choice);
 	return choice;
 }
